@@ -1,9 +1,17 @@
 html, body {
   margin: 0;
   padding: 0;
-  background: #000;
+  background: white;
   height: 100%;
   width: 100%;
+}
+
+canvas {
+  background: white;
+}
+
+header {
+  height: 200px;
 }
 
 #confetti{
@@ -16,5 +24,14 @@ html, body {
 
 .logo {
   width: 25%;
-  left: 250px;
+  margin-left: 250px;
+}
+
+img {
+    height: auto;
+    max-width: 100%;
+}
+
+.main-image {
+  margin: auto;
 }

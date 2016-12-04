@@ -1,4 +1,1 @@
-  function fadeOut(){
-    setTimeout(function(){
-      $('#confetti').fadeOut('slow', 'swing')
-    }, 2000)
+$('canvas').fadeOut(6000);
