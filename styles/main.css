@@ -1,17 +1,27 @@
-html, body {
-  margin: 0;
+* {
   padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
   background: white;
   height: 100%;
   width: 100%;
+}
+
+nav {
+  height: 125px;
 }
 
 canvas {
   background: white;
 }
 
-header {
-  height: 200px;
+.logo {
+  width: 125px;
+  margin: auto;
+  display: block
 }
 
 #confetti{
@@ -22,16 +32,16 @@ header {
   width: 100%;
 }
 
-.logo {
-  width: 25%;
-  margin-left: 250px;
-}
-
-img {
-    height: auto;
-    max-width: 100%;
-}
-
 .main-image {
-  margin: auto;
+  margin-left: 270px;
+}
+
+.parallax {
+  background-image: url("assets/images/wedding.jpg");
+  height: 700px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: .9;
 }
