@@ -5,25 +5,99 @@
   <title>Eventmakr - Create, Innovate, Celebrate</title>
   <link rel="stylesheet" href="styles/main.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Lato|Sorts+Mill+Goudy" rel="stylesheet">
   <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </head>
 <body>
 
-<nav class="navbar navbar-transparent">
-  <div class="container">
-    <div class="row">
-      <img class="logo" src="assets/images/logo.png" alt="">
-    </div>
-  </div>
-</nav>
 
-<div class="container parallax">
-  <div class="row">
-    <img class="col-md-6 main-image" src="assets/images/wedding.jpg" alt="">
+<div class="parallax">
+  <nav class="navbar navbar-top">
+      <img class="logo" src="../images/logo_black.png" alt="">
+      <a href="#" ><button class="btn btn-primary">Sign Up</button></a>
+  </nav>
+</div>
+
+
+<div class="intro">
+  <div class="video-container">
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/PDC2GWv9nPQ" frameborder="0" allowfullscreen></iframe>
+  </div>
+  <div class="container main-copy">
+    <p>Welcome to Eventmakr, a market for communities to find all essentials for special occasions, gatherings, and events. Eventmakr will offer retailers and vendors a platform to display and market their products and services in a one-stop shop.</p>
+    <p class="bold">Want to learn more?</p>
+    <p>Sign up for more information - we are currently in development and spreading the word. Fill in your business e-mail below, and we'll contact you with details.</p>
   </div>
 </div>
 
+
+<div class="container steps">
+  <h2 class="steps-headline">How Eventmakr Works</h2>
+  <div class="row text-center">
+    <div class="columns col-sm-4">
+      <img class="icons" src="../images/calendar-64.png" alt="">
+      <p class="steps-copy">Enter your event details.</p>
+    </div>
+    <div class="columns col-sm-4">
+      <img class="icons" src="../images/user-7-64.png" alt="">
+      <p class="steps-copy">Get a list of local vendors.</p>
+    </div>
+    <div class="columns col-sm-4">
+      <img class="icons" src="../images/speech-bubble-5-64.png" alt="">
+      <p class="steps-copy">Plan your event, gathering, or special occasion - all in one place.</p>
+    </div>
+  </div>
+</div>
+
+<div class="container payment-section">
+  <form class="signup" action="/" method="POST">
+  <div class="row payment">
+    <h2>Join Eventmakr Vendors</h2>
+        <div class="row">
+          <div class="col-xs-6 form-group">
+            <label for="inputEmail">Business Email</label>
+            <input type="email" class="form-control" aria-describedby="emailHelp" placeholder="Enter email">
+          </div>
+          <div class="col-xs-6 form-group">
+            <label for="firstName">First Name</label>
+            <input type="text" class="form-control" placeholder="First Name">
+          </div>
+          <div class="col-xs-6 form-group">
+            <label for="inputPassword">Password</label>
+            <input type="password" class="form-control" placeholder="Password">
+          </div>
+          <div class="col-xs-6 form-group">
+            <label for="lastName">Last Name</label>
+            <input type="text" class="form-control" placeholder="Last Name">
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-xs-6 form-group">
+            <label for="confirmPassword">Confirm Password</label>
+            <input type="password" class="form-control" placeholder="Password">
+          </div>
+          <div class="col-xs-6 form-group">
+            <label for="phoneNumber">Phone Number</label>
+            <input type="number" class="form-control" placeholder="Phone Number">
+          </div>
+        </div>
+
+        <div class="subscribe-btn" onclick="createVendor()">
+          <script
+            src="https://checkout.stripe.com/checkout.js" class="stripe-button"
+            data-key=""
+            data-amount="5999"
+            data-name="Eventmakr"
+            data-description="Beta Subscription"
+            data-label="Subscribe"
+            data-image="../images/logo.png"
+            data-locale="auto">
+          </script>
+        </div>
+    </div>
+  </form>
+</div>
 
 <canvas height='1' id='confetti' width='1'></canvas>
 

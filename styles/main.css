@@ -2,16 +2,27 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  font-family: 'Sorts Mill Goudy', serif;
 }
 
 body {
-  background: white;
   height: 100%;
   width: 100%;
 }
 
 nav {
-  height: 125px;
+  position: absolute;
+  height: 80px;
+  background: white;
+  opacity: .6;
+}
+
+.btn {
+  color: white;
+  background-color: #181818 !important;
+  margin-top: -120px;
+  margin-left: 1000px;
+  text-transform: uppercase;
 }
 
 canvas {
@@ -19,8 +30,9 @@ canvas {
 }
 
 .logo {
-  width: 125px;
-  margin: auto;
+  width: 100px;
+  margin-top: -10px;
+  margin-left: 125px;
   display: block
 }
 
@@ -32,16 +44,108 @@ canvas {
   width: 100%;
 }
 
-.main-image {
-  margin-left: 270px;
-}
-
 .parallax {
-  background-image: url("assets/images/wedding.jpg");
-  height: 700px;
+  background-image: url("../images/birthday_celebration.jpeg");
+  height: 550px;
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   opacity: .9;
 }
+
+.intro-copy {
+  position: absolute;
+  margin-top: 250px;
+  margin-left: 375px;
+  text-transform: uppercase;
+  font-size: 36px;
+  letter-spacing: 5px;
+  text-shadow: 3px #181818;
+  font-weight: bold;
+}
+
+#headline {
+  background-color: #181818;
+  color: #FBFBF3;
+}
+
+.steps {
+  height: 300px;
+  width: 100%;
+  font-size: 20px;
+  background-color: #D1D6E1;
+}
+
+.steps-headline {
+  margin-top: 75px;
+}
+
+.steps-copy {
+  margin-top: 15px;
+}
+
+.icons {
+  color: #181818;
+  margin-top: 30px;
+}
+
+.intro {
+  height: 650px;
+  background-color: #181818;
+  color: #FBFBF3;
+}
+
+.intro-headline {
+  position: absolute;
+  text-align: center;
+  margin-top: 30px;
+  text-transform: uppercase;
+}
+
+.video-container {
+  position: absolute;
+  margin-top: 75px;
+  margin-left: 300px;
+}
+
+.main-copy {
+  position: absolute;
+  margin-top: 425px;
+  text-align: center;
+  color: #FBFBF3;
+  font-size: 20px;
+}
+
+.bold {
+  font-weight: bold;
+  font-size: 24px;
+}
+
+.payment-section {
+  background-image: url("../images/wedding.jpg");
+  height: 550px;
+  width: 100%;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: .9;
+}
+
+.payment {
+  display: block;
+  position: relative;
+  padding: 15px;
+  margin-left: 300px;
+  margin-top: 100px;
+  width: 500px;
+  background-color: #B1B1B1;
+  border-radius: 10px;
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 25px;
+}
+
